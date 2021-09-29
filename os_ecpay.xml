@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="eshopplugin" group="payment">
+    <name>os_ecpay</name>
+    <title>ECPay 綠界科技</title>
+    <author>Alex Chen</author>
+    <creationDate>06-12-2021</creationDate>
+    <copyright>Copyright 2010-20121 Nozaro Studio</copyright>
+    <license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+    <authorEmail>alex@nozarostudio.com</authorEmail>
+    <authorUrl>https://www.nozarostudio.com/</authorUrl>
+    <version>1.0.0</version>
+    <description>ECPay Payment Plugin For EShop Shopping Cart Extension</description>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="mode" type="radio" default="1" label="Mode">
+                    <option value="0">Test Mode</option>
+                    <option value="1">Live Mode</option>
+                </field>
+                <field name="MerchantID" type="text" default="" label="商店代號(必填)" description="請輸入商店代號"/>
+                <field name="hashkey" type="text" default="" label="商店Hashkey(必填)" description="請輸入商店Hashkey"/>
+                <field name="hashiv" type="text" default="" label="商店Hashiv(必填)" description="請輸入商店Hashiv"/>
+            </fieldset>
+        </fields>
+    </config>
+    <files>
+        <filename>os_ecpay.php</filename>
+        <filename>ECPay.Payment.Integration.php</filename>
+    </files>
+    <installsql/>
+    <installfile/>
+</install>
