@@ -83,7 +83,7 @@ class os_ecpay extends os_payment
         $obj->SendExtend['ExpireDate']     = 5 ;       
         //訂單的商品資料
         array_push($obj->Send['Items'], array(
-            'Name' => "零浪費旅行商城商品", 
+            'Name' => $siteUrl. "商品", 
             'Price' => $obj->Send['TotalAmount'],
             'Currency' => "元", 
             'Quantity' => (int) "1", 
